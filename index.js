@@ -6,6 +6,7 @@ const generatePage = require('./Utils/generatePage')
 
 // TODO: Create an array of questions for user input
 const questions = [
+    console.log(questions),
     {
         type: "input",
         name: "title",
@@ -60,11 +61,20 @@ const questions = [
         name: "email",
         message: "Please enter your email address."
     },
-    
+
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+            return console.log(err);
+        } 
+        console.log("Your file has been successfully created.")
+    });
+}
+
+
 
 // TODO: Create a function to initialize app
 function init() {}
