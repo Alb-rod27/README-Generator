@@ -2,11 +2,13 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const util = require('util')
-const generatePage = require('./Utils/generatePage')
+
+const writeFileAsync = util.promisify(writeToFile);
+const generatePage = require('./utils/generatePage')
 
 // TODO: Create an array of questions for user input
-const questions = [
-    console.log(questions),
+const promptUser = () => {
+  return inquirer.prompt([
     {
         type: "input",
         name: "title",
@@ -62,7 +64,7 @@ const questions = [
         message: "Please enter your email address."
     },
 
-];
+]);
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -77,7 +79,16 @@ function writeToFile(fileName, data) {
 
 
 // TODO: Create a function to initialize app
-function init() {}
+async function init() {
+    try {
+        const answers = await promptUser();
+        const generateContent = generateReadme(answers);
+        await writeFileAsync('')
+    }
+
+ }
+}
+  
 
 // Function call to initialize app
 init();

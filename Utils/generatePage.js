@@ -3,3 +3,5 @@ function generatePage(userInput) {
     ${userInput.title}
     `
 }
+
+module.exports = generatePage;
