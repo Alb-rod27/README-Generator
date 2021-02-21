@@ -1,9 +1,8 @@
-function generateMarkdown(data) {
-    return `
-    # ${userInput.title}
+
+    # Hi
 
     ## Description
-        ${data.description}
+      hdhd
 
     ## Table of contents
     [Description](#description)
@@ -15,18 +14,18 @@ function generateMarkdown(data) {
     [Contributors](#contributors)
 
     ## Installation
-      ${data.installation}
+      svs
 
     ## Usage
-      ${data.usage}
+      s
+
+    ## Credits
+      N/A
 
     ## License
-        ${data.license}
+        afl-3.0
         
     ## Contributors
-        ${data.contributors}
+        gskldvs
     
-    `;
-}
-
-module.exports = generateMarkdown;
+    
