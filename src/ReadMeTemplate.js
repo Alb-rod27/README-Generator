@@ -6,13 +6,12 @@ function ReadMeTemplate(data) {
       ${data.description}
 
     ## Table of contents
-    [Description](#description)
-    [Installation](#installation)
-    [Usage](#usage)
-    [Credits](#credits)
-    [license](#license)
-    [Features](#features)
-    [Contributors](#contributors)
+    -[Description](#description)
+    -[Installation](#installation)
+    -[Usage](#usage)
+    -[Credits](#credits)
+    -[license](#license)
+    -[Contributors](#contributors)
 
     ## Installation
       ${data.installation}

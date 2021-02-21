@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util')
 
-const ReadMeTemplate = require('./src/readme-template')
+const ReadMeTemplate = require('./src/ReadMeTemplate')
 
 const createFile = util.promisify(fs.writeFile);
 
@@ -33,7 +33,7 @@ const promptUser = () => {
     {
         type: "input",
         name: "credits",
-        message: "List any collaborators, if any or type 'N/A':"
+        message: "If none, type 'N/A':"
     },
     {
         type: "list",
@@ -41,6 +41,7 @@ const promptUser = () => {
         message: "Please choose license for your project",
         choices: [
             "afl-3.0",
+            "Mozilla",
             "apache-2.0",
             "bsl-1.0",
             "gpl",
@@ -53,16 +54,6 @@ const promptUser = () => {
         type: "input",
         name: "contributors",
         message: "Are there any contributors in your project?"
-    },
-    {
-        type: "input",
-        name: "username",
-        message: "Please enter your Github username."
-    },
-    {
-        type: "input",
-        name: "email",
-        message: "Please enter your email address."
     },
   ])
 };

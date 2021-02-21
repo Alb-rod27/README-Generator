@@ -1,31 +1,30 @@
 
-    # Hi
+    # README-Gen
 
     ## Description
-      hdhd
+      To generate a README.md using Node.js
 
     ## Table of contents
-    [Description](#description)
-    [Installation](#installation)
-    [Usage](#usage)
-    [Credits](#credits)
-    [license](#license)
-    [Features](#features)
-    [Contributors](#contributors)
+    -[Description](#description)
+    -[Installation](#installation)
+    -[Usage](#usage)
+    -[Credits](#credits)
+    -[license](#license)
+    -[Contributors](#contributors)
 
     ## Installation
-      svs
+      Installed inquirer and util
 
     ## Usage
-      s
+      To generate a fully working README.md
 
     ## Credits
       N/A
 
     ## License
-        afl-3.0
+        Mozilla
         
     ## Contributors
-        gskldvs
+        N/A
     
     
