@@ -2,13 +2,13 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const util = require('util')
-const writeFileAsync = util.promisify(writeToFile);
+//const writeFileAsync = util.promisify(writeToFile);
 const generateMarkdown = require('./utils/generateMarkdown')
 
 // TODO: Create an array of questions for user input
 const questions = [
         {
-            type: "input",
+        type: "input",
         name: "title",
         message: "Please enter your project title." 
     },
@@ -48,11 +48,6 @@ const questions = [
     },
     {
         type: "input",
-        name: "tests",
-        message: "Is there a test included in your project?"
-    },
-    {
-        type: "input",
         name: "username",
         message: "Please enter your Github username."
     },
@@ -79,8 +74,8 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 async function init() {
     try {
-        //const answers = await inquirer.prompt(promptUser);
-        const markdown = generateMarkdown(answers);
+        const data = await promptUser;
+        const createContent = generateMarkdown(data);
         
     } catch(err) {
         //console.log(promptUser);
