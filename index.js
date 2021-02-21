@@ -2,12 +2,15 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const util = require('util')
-//const writeFileAsync = util.promisify(writeToFile);
+
 const generateMarkdown = require('./utils/generateMarkdown')
 
+//const createFile = util.promisify(fs.writeFile);
+
 // TODO: Create an array of questions for user input
-const questions = [
-        {
+const promptUser () => {}
+    return inquirer.prompt ([
+    {
         type: "input",
         name: "title",
         message: "Please enter your project title." 
@@ -26,6 +29,11 @@ const questions = [
         type: "input",
         name: "usage",
         message: "What is the usage of your project?"
+    },
+    {
+        type: "input",
+        name: "credits",
+        message: "List any collaborators, if any or type 'N/A':"
     },
     {
         type: "list",
@@ -56,20 +64,9 @@ const questions = [
         name: "email",
         message: "Please enter your email address."
     },
-    
-];
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, err => {
-        if (err) {
-            return console.log(err);
-        } 
-        //console.log("writeToFile")
-    });
-}
-
-
+  ])
+;
+const createFile = util.promisify(fs.writeFile);
 
 // TODO: Create a function to initialize app
 async function init() {
@@ -78,7 +75,7 @@ async function init() {
         const createContent = generateMarkdown(data);
         
     } catch(err) {
-        //console.log(promptUser);
+        console.log(err);
     };
 }
 init();

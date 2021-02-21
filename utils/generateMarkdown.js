@@ -21,13 +21,12 @@ function generateMarkdown(data) {
       ${data.usage}
 
     ## License
-
+        ${data.license}
+        
     ## Contributors
         ${data.contributors}
-    ## Tests
-
-    ## Questions
-    `
+    
+    `;
 }
 
 module.exports = generateMarkdown;
