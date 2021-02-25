@@ -31,9 +31,8 @@ function ReadMeTemplate(data) {
   ${data.contributors}
 
   ## Questions
-  * ${data.github}
-  If You have any questions, please feel free to contact me at 
-  * ${data.email}
+  * Github username: ${data.github}
+  * If You have any questions, please feel free to contact me at ${data.email}
   `;
 }
 

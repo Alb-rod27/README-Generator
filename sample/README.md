@@ -1,8 +1,9 @@
 
-  # README-Gen
+  # test
+  https://github.com/Alb-rod27/README-Generator
 
   ## Description
-  to 
+  test
 
   ## Table of contents
   * [Description](#description)
@@ -14,10 +15,10 @@
   * [Questions](#questions)
 
   ## Installation
-  none
+  test
 
   ## Usage
-  generating readme
+  tes
 
   ## Credits
   N/A
@@ -26,9 +27,9 @@
   Mozilla
         
   ## Contributors
-  only me
+  N/A
 
   ## Questions
-  * Alb-rod27
-  * sylmar2527@gmail.com
+  * Github username: Alb-rod27
+  * If You have any questions, please feel free to contact me at sylmar2527@gmail.com
   
