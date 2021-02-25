@@ -1,30 +1,30 @@
 
-    # README-Gen
+  # README-Gen
 
-    ## Description
-      To generate a README.md using Node.js
+  ## Description
+  a node.js generator made to create a README.md
 
-    ## Table of contents
-    -[Description](#description)
-    -[Installation](#installation)
-    -[Usage](#usage)
-    -[Credits](#credits)
-    -[license](#license)
-    -[Contributors](#contributors)
+  ## Table of contents
+  -[Description](#description)
+  -[Installation](#installation)
+  -[Usage](#usage)
+  -[Credits](#credits)
+  -[license](#license)
+  -[Contributors](#contributors)
 
-    ## Installation
-      Installed inquirer and util
+  ## Installation
+  Installed package.json and node_modules
 
-    ## Usage
-      To generate a fully working README.md
+  ## Usage
+  to easily generate a README.md using node.js
 
-    ## Credits
-      N/A
+  ## Credits
+  N/a
 
-    ## License
-        Mozilla
+  ## License
+  Mozilla
         
-    ## Contributors
-        N/A
+  ## Contributors
+  N/A
     
-    
+  

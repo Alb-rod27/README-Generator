@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util')
 
-const ReadMeTemplate = require('./src/ReadMeTemplate')
+const ReadMeTemplate = require('./src/ReadMeTemplate');
 
 const createFile = util.promisify(fs.writeFile);
 
@@ -33,7 +33,7 @@ const promptUser = () => {
     {
         type: "input",
         name: "credits",
-        message: "If none, type 'N/A':"
+        message: "Any credits to mention?, if none type 'N/A':"
     },
     {
         type: "list",
@@ -65,7 +65,7 @@ async function init() {
         const createContent = ReadMeTemplate(data);
         
         await createFile("./sample/README.md", createContent);
-        console.log('README.md file successfully created!')
+        console.log('README.md file successfully created!');
     } catch(err) {
         console.log(err);
     }

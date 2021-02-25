@@ -1,34 +1,34 @@
 function ReadMeTemplate(data) {
-    return `
-    # ${data.title}
+  return `
+  # ${data.title}
 
-    ## Description
-      ${data.description}
+  ## Description
+  ${data.description}
 
-    ## Table of contents
-    -[Description](#description)
-    -[Installation](#installation)
-    -[Usage](#usage)
-    -[Credits](#credits)
-    -[license](#license)
-    -[Contributors](#contributors)
+  ## Table of contents
+  -[Description](#description)
+  -[Installation](#installation)
+  -[Usage](#usage)
+  -[Credits](#credits)
+  -[license](#license)
+  -[Contributors](#contributors)
 
-    ## Installation
-      ${data.installation}
+  ## Installation
+  ${data.installation}
 
-    ## Usage
-      ${data.usage}
+  ## Usage
+  ${data.usage}
 
-    ## Credits
-      ${data.credits}
+  ## Credits
+  ${data.credits}
 
-    ## License
-        ${data.license}
+  ## License
+  ${data.license}
         
-    ## Contributors
-        ${data.contributors}
+  ## Contributors
+  ${data.contributors}
     
-    `;
+  `;
 }
 
 module.exports = ReadMeTemplate;
