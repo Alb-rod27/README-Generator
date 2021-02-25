@@ -1,17 +1,19 @@
 function ReadMeTemplate(data) {
   return `
   # ${data.title}
+  https://github.com/Alb-rod27/README-Generator
 
   ## Description
   ${data.description}
 
   ## Table of contents
-  -[Description](#description)
-  -[Installation](#installation)
-  -[Usage](#usage)
-  -[Credits](#credits)
-  -[license](#license)
-  -[Contributors](#contributors)
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Credits](#credits)
+  * [license](#license)
+  * [Contributors](#contributors)
+  * [Questions](#questions)
 
   ## Installation
   ${data.installation}
@@ -27,7 +29,11 @@ function ReadMeTemplate(data) {
         
   ## Contributors
   ${data.contributors}
-    
+
+  ## Questions
+  * ${data.github}
+  If You have any questions, please feel free to contact me at 
+  * ${data.email}
   `;
 }
 
