@@ -1,9 +1,9 @@
 
-  # test
+  # README-Gen
   https://github.com/Alb-rod27/README-Generator
 
   ## Description
-  test
+  To easily create a README with node.js
 
   ## Table of contents
   * [Description](#description)
@@ -15,10 +15,10 @@
   * [Questions](#questions)
 
   ## Installation
-  test
+  Installed node_modules and package.json
 
   ## Usage
-  tes
+  Generating a README using Node.js
 
   ## Credits
   N/A
